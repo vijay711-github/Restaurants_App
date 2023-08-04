@@ -6,7 +6,7 @@ const Section = ({ title, description, isVisible, setIsVisible }) => {
       <h3 className="font-bold text-xl">{title}</h3>
       {isVisible ? (
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={() => setIsVisible(!isVisible)}
           className="cursor-pointer underline"
         >
           Hide
